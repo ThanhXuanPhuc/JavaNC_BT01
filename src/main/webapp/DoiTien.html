@@ -10,11 +10,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h2>Bài tập 03 - Đổi tiền</h2>
+        <<h2>Bài tập 03 - Đổi tiền</h2>
         <form action="DoiTienServlet" method="get">
-            Cho biết số tiền: <input type="double" name="sotien">
-            Cho biết loại ngoại tệ <input type="string" name="loaingoaite">
-            <input type="submit" value ="Gửi">
+            Cho biết số tiền: <input type="number" name="sotien">
+            <br>
+            Cho biết loại ngoại tệ: 
+            <select name="loaingoaite">
+                <option value="USD">USD - Đô la Mỹ</option>
+                <option value="GBP">GBP - Bảng Anh</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="JPY">JPY - Yên Nhật</option>
+                <option value="AUD">AUD - Đô la Úc</option>
+            </select>
+            <br>
+            <input type="submit" value="Gửi">
         </form>
-    </body>
 </html>
